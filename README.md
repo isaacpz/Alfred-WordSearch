@@ -14,3 +14,21 @@ Simply type in a command. Selecting a result will copy that word to your clipboa
 Simply [download the latest .alfredworkflow file](https://github.com/isaacpz/Alfred-WordSearch/releases/latest) and double click it to import it to Alfred.
 
 Word Search will update on its own.
+
+## Demonstration
+
+Searching for synonyms of the word “amazing”
+![Demo Image](/screenshots/syn-demo.png)
+
+You can also search for synonyms of phrases, like “ringing in the ears”
+![Demo Image](/screenshots/syn-demo-2.png)
+
+Searching for rhymes of the word “strange”
+![Demo Image](/screenshots/rhyme-demo.png)
+
+Searching for words that describe “dog”
+![Demo Image](/screenshots/describing-demo.png)
+
+## Credits
+* [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that wraps this workflow.
+* [Datamuse](http://datamuse.com) - The dictionary that powers this workflow.
