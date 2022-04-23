@@ -1,5 +1,5 @@
 # Word Search
-Word Search is an Alfred 2/3 workflow which exposes powerful word searching utilities. Ultimately, the workflow can be leveraged to widen your vocabulary and make you a better writer.
+Word Search is an Alfred 4 workflow which exposes powerful word searching utilities. Ultimately, the workflow can be leveraged to widen your vocabulary and make you a better writer.
 
 ## Quick Reference
 * `syn [word]` - Broadly searches for words related to a word/phrase.
@@ -30,5 +30,8 @@ Searching for words that describe “dog”
 ![Demo Image](/screenshots/describing-demo.png)
 
 ## Credits
-* [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that wraps this workflow.
+* [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that previously wrapped this workflow.
+* [Alfred Workflow for Python3](https://github.com/NorthIsUp/alfred-workflow-py3)  - the updated framework for python3 that **now** wraps this workflow.
+* [Alfred Workflow for Python3 + web.py](https://github.com/kw-lee/alfred-workflow-py3) - with a new web.py by @kw-lee re-inserted.
 * [Datamuse](http://datamuse.com) - The dictionary that powers this workflow.
+* [jun6lee](https://github.com/jun6lee) - who pieces and ported it to make it work.
