@@ -32,6 +32,5 @@ Searching for words that describe “dog”
 ## Credits
 * [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that previously wrapped this workflow.
 * [Alfred Workflow for Python3](https://github.com/NorthIsUp/alfred-workflow-py3)  - the updated framework for python3 that **now** wraps this workflow.
-* [Alfred Workflow for Python3 + web.py](https://github.com/kw-lee/alfred-workflow-py3) - with a new web.py by @kw-lee re-inserted.
 * [Datamuse](http://datamuse.com) - The dictionary that powers this workflow.
 * [jun6lee](https://github.com/jun6lee) - who pieces and ported it to make it work.
