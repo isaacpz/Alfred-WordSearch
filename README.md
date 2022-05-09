@@ -11,7 +11,7 @@ Word Search is an Alfred 4 workflow which exposes powerful word searching utilit
 Simply type in a command. Selecting a result will copy that word to your clipboard and automatically paste it in the front most app. 
 
 ## Installation
-Simply [download the latest .alfredworkflow file](https://github.com/isaacpz/Alfred-WordSearch/releases/latest) and double click it to import it to Alfred.
+Simply [download the latest .alfredworkflow file](https://github.com/jun6lee/Alfred-WordSearch/releases/latest) and double click it to import it to Alfred.
 
 Word Search will update on its own.
 
