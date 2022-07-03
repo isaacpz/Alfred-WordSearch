@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 import os, sys, json
+import urllib
 import urllib.request as urllib2
 
 from workflow import Workflow3, ICON_WARNING
@@ -24,7 +25,7 @@ def main(wf):
     wf.send_feedback()
 
 def getSimilar(mode, query):
-    api_url = 'https://api.datamuse.com/words?'+mode+'='+query+'&md=d&max=10'
+    api_url = 'https://api.datamuse.com/words?'+mode+'='+urllib.parse.quote(query)+'&md=d&max=10'
     dict = urllib2.urlopen(api_url).read()
     words = json.loads(dict)
     
