@@ -1,5 +1,5 @@
 # Word Search
-Word Search is an Alfred 2/3 workflow which exposes powerful word searching utilities. Ultimately, the workflow can be leveraged to widen your vocabulary and make you a better writer.
+Word Search is an Alfred 4 workflow which exposes powerful word searching utilities. Ultimately, the workflow can be leveraged to widen your vocabulary and make you a better writer.
 
 ## Quick Reference
 * `syn [word]` - Broadly searches for words related to a word/phrase.
@@ -11,7 +11,7 @@ Word Search is an Alfred 2/3 workflow which exposes powerful word searching util
 Simply type in a command. Selecting a result will copy that word to your clipboard and automatically paste it in the front most app. 
 
 ## Installation
-Simply [download the latest .alfredworkflow file](https://github.com/isaacpz/Alfred-WordSearch/releases/latest) and double click it to import it to Alfred.
+Simply [download the latest .alfredworkflow file](https://github.com/jun6lee/Alfred-WordSearch/releases/latest) and double click it to import it to Alfred.
 
 Word Search will update on its own.
 
@@ -30,5 +30,8 @@ Searching for words that describe “dog”
 ![Demo Image](/screenshots/describing-demo.png)
 
 ## Credits
-* [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that wraps this workflow.
+* [Alfred Workflow](https://github.com/deanishe/alfred-workflow) - the framework that previously wrapped this workflow.
+* [Alfred Workflow for Python3](https://github.com/NorthIsUp/alfred-workflow-py3)  - the updated framework for python3 that **now** wraps this workflow.
 * [Datamuse](http://datamuse.com) - The dictionary that powers this workflow.
+* [jun6lee](https://github.com/jun6lee) - 2.0.1 pieced and ported to make it work with Python3.
+* [mtissington](https://github.com/mtissington) - 2.0.2 - fixed spaced (dual words) causing an error.

@@ -1,14 +1,15 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-import sys
+import os, sys, json
+import urllib
+import urllib.request as urllib2
 
-from workflow import Workflow3, web, ICON_WARNING
-
+from workflow import Workflow3, ICON_WARNING
 
 def main(wf):
     args = wf.args
-
+    
     def cacheSearch():
         return getSimilar(args[0], args[1])
 
@@ -21,37 +22,22 @@ def main(wf):
 
     for word in words:
         wf.add_item(title=word['word'], subtitle=word['def'], arg=word['word'], valid=True)
-
     wf.send_feedback()
 
 def getSimilar(mode, query):
-    url = 'https://api.datamuse.com/words'
-    params = dict(max=20, md='d')
-    params[mode] = query
-    
-    r = web.get(url, params)
-
-    # throw an error if request failed
-    r.raise_for_status()
-
-    words = r.json()
+    api_url = 'https://api.datamuse.com/words?'+mode+'='+urllib.parse.quote(query)+'&md=d&max=10'
+    dict = urllib2.urlopen(api_url).read()
+    words = json.loads(dict)
     
     for i, word in enumerate(words):
         definition = ""
         if 'defs' in word and len(word['defs']) != 0:
             definition = word['defs'][0].split("\t")[1]
-
         words[i]['def'] = definition
     
     return words
-
     
 
 if __name__ == '__main__':
-    wf = Workflow3(update_settings={
-        "github_slug": "isaacpz/Alfred-WordSearch"
-    })
-    if wf.update_available:
-        wf.start_update()
-    
+    wf = Workflow3()
     sys.exit(wf.run(main))

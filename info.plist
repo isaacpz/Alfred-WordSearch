@@ -91,6 +91,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -110,7 +112,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching direct synonyms...</string>
 				<key>script</key>
-				<string>python similar.py rel_syn "{query}"</string>
+				<string>python3 similar.py rel_syn "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -129,7 +131,7 @@
 			<key>uid</key>
 			<string>834B63A1-D8C7-4061-AF32-6B321276BF0F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -138,6 +140,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -157,7 +161,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching synonyms...</string>
 				<key>script</key>
-				<string>python similar.py ml "{query}"</string>
+				<string>python3 similar.py ml "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -176,7 +180,7 @@
 			<key>uid</key>
 			<string>45795EDC-A823-4BD7-B616-54CF49620873</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -185,6 +189,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -204,7 +210,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching antonyms...</string>
 				<key>script</key>
-				<string>python similar.py rel_ant "{query}"</string>
+				<string>python3 similar.py rel_ant "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -223,7 +229,7 @@
 			<key>uid</key>
 			<string>6326AAF5-06B3-43FC-A373-4327B7F0448C</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -232,6 +238,8 @@
 				<true/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -240,7 +248,7 @@
 			<key>uid</key>
 			<string>2A6EA289-19CD-466C-BD3D-59CD84C66CC3</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -249,6 +257,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -268,7 +278,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching rhyming words...</string>
 				<key>script</key>
-				<string>python similar.py rel_rhy "{query}"</string>
+				<string>python3 similar.py rel_rhy "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -287,7 +297,7 @@
 			<key>uid</key>
 			<string>75F9A4E0-4D52-4155-8DF7-B3A5C26F765E</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -296,6 +306,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -315,7 +327,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching descriptive words...</string>
 				<key>script</key>
-				<string>python similar.py rel_jjb "{query}"</string>
+				<string>python3 similar.py rel_jjb "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -334,11 +346,15 @@
 			<key>uid</key>
 			<string>922D7413-5A88-43D5-9EED-C5D03305A522</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Tweaked for Python3/MacOS Montery by jun6lee
+
+=====
+
+Word Search is an Alfred workflow which exposes powerful word searching utilities. Ultimately, the workflow can be leveraged to widen your vocabulary and make you a better writer.</string>
 	<key>uidata</key>
 	<dict>
 		<key>2A6EA289-19CD-466C-BD3D-59CD84C66CC3</key>
@@ -384,6 +400,10 @@
 			<integer>490</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2.0.0</string>
 	<key>webaddress</key>
 	<string>isaacpz.me</string>
 </dict>
